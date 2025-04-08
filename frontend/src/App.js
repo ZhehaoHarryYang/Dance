@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import VideoUploader from './components/VideoUploader';
-import DanceGame from './components/DanceGame';
+import DanceGame from './components/DanceGame/DanceGame';
 
 const App = () => {
   const [videoUrl, setVideoUrl] = useState(null);
