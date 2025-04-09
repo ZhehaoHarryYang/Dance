@@ -14,8 +14,8 @@ const PoseDetection = ({ isPlaying, expectedPoseFilename, videoTimestamp, totalS
   const [scoreError, setScoreError] = useState(null);
   const processingRef = useRef(false);
   const videoTimestampRef = useRef(videoTimestamp);
-  const parsedUrl = new URL(expectedPoseFilename);
-  const filename = parsedUrl.pathname.split('/').pop();
+  // const parsedUrl = new URL(expectedPoseFilename);
+  const filename = expectedPoseFilename.split('/').pop();
   const [totalScore, setTotalScore] = useState(0); 
   const lastProcessedTimestampRef = useRef(null); // Store the last processed timestamp
 
